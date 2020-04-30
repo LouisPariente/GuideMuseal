@@ -1,0 +1,144 @@
+{
+  "title": "home",
+  "articles": [{
+      "id": "01",
+      "en": "/",
+      "fr": "/"
+    },
+    {
+      "id": "02",
+      "en": "blog",
+      "fr": "blog"
+    },
+    {
+      "id": "03",
+      "en": "about",
+      "fr": "presentation"
+    },
+    {
+      "id": "04",
+      "en": "contact",
+      "fr": "contact"
+    },
+    {
+      "id": "05",
+      "en": "artworks",
+      "fr": "galerie"
+    },
+    {
+      "id": "06",
+      "en": "artworks/sculpture/marble",
+      "fr": "galerie/scultura/marmo"
+    },
+    {
+      "id": "07",
+      "en": "2019-02-01-my-first-gatsby-blog-post",
+      "fr": "2019-02-01-mio-primo-blog-post-gatsby"
+    },
+    {
+      "id": "08",
+      "en": "2019-03-11-news-from-art-planet",
+      "fr": "2019-03-11-notizie-dal-pianeta-arte"
+    },
+    {
+      "id": "09",
+      "en": "artworks/painting",
+      "fr": "galerie/pittura"
+    },
+    {
+      "id": "10",
+      "en": "artworks/sculpture/introduction",
+      "fr": "galerie/scultura/introduzione"
+    },
+    {
+      "id": "11",
+      "en": "artworks/performance/introduction",
+      "fr": "opere/performance/introduzione"
+    },
+    {
+      "id": "12",
+      "en": "artworks/new-media/aumgmented-reality",
+      "fr": "opere/new-media/realtà-aumentata"
+    },
+    {
+      "id": "13",
+      "en": "contact/thanks",
+      "fr": "contatto/grazie"
+    },
+    {
+      "id": "14",
+      "en": "tags",
+      "fr": "tags"
+    },
+    {
+      "id": "15",
+      "en": "2019-05-03-art-of-kaki",
+      "fr": "2019-05-03-arte-di-kaki"
+    },
+    {
+      "id": "16",
+      "en": "artworks/portfolio",
+      "fr": "opere/portfolio"
+    },
+    {
+      "id": "17",
+      "en": "artworks/painting/new/abstract-art-persimmon-among-the-stars",
+      "fr": "opere/pittura/nuova/arte-astratta-caco-tra-le-stelle"
+    },
+    {
+      "id": "18",
+      "en": "artworks/painting/introduction",
+      "fr": "opere/pittura/introduzione"
+    },
+    {
+      "id": "19",
+      "en": "artworks/painting/new",
+      "fr": "opere/pittura/nuova"
+    },
+    {
+      "id": "20",
+      "en": "artworks/painting/oldest",
+      "fr": "opere/pittura/archivio"
+    },
+    {
+      "id": "21",
+      "en": "artworks/sculpture/bronze",
+      "fr": "opere/scultura/bronzo"
+    },
+    {
+      "id": "22",
+      "en": "artworks/sculpture/wood",
+      "fr": "opere/scultura/legno"
+    },
+    {
+      "id": "23",
+      "en": "artworks/sculpture/other-materials",
+      "fr": "opere/scultura/altri-materiali"
+    },
+    {
+      "id": "24",
+      "en": "artworks/performance/performance01",
+      "fr": "opere/performance/performance01"
+    },
+    {
+      "id": "25",
+      "en": "artworks/performance/performance02",
+      "fr": "opere/performance/performance02"
+    },
+    {
+      "id": "26",
+      "en": "artworks/performance/performance03",
+      "fr": "opere/performance/performance03"
+    },
+    {
+      "id": "27",
+      "en": "artworks/performance/performance04",
+      "fr": "opere/performance/performance04"
+    },
+    {
+      "id": "28",
+      "en": "artworks/new-media/experimental",
+      "fr": "opere/new-media/experimental"
+    }
+  ]
+}
