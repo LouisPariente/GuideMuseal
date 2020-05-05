@@ -1,6 +1,8 @@
 module.exports = {
+  'axes': ['axes', 'axes'],
+  'navigation': ['navigation', 'navigation'],
+  'acces_art': ['art_accessibility','acces_art'],
   'about': ['about', 'presentation'],
-  'artworks': ['artworks', 'galerie'],
   'blog': ['blog', 'blog'],
   'contact': ['contact', 'contact']
 };

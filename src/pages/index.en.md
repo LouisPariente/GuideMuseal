@@ -10,7 +10,7 @@ date: "05-03-2019"
 image: /img/4504.jpg
 heading: "The persimmon is the artist fruit..."
 mainpitch:
-  heading: "Artworks with augmented reality"
+  heading: "axes with augmented reality"
   subheading: "Interactive Art"
   title: "Why Kaki?"
   description: "Because it is a fruit with incredible qualities..."

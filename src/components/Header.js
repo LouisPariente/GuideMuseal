@@ -13,7 +13,7 @@ import {
   isMobile
 } from "react-device-detect";
 import select from '../components/utils'
-import menu from '../data/artworksMenu'
+import menu from '../data/axesMenu'
 
 const Header = class extends React.Component {
 
@@ -72,7 +72,7 @@ const Header = class extends React.Component {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Kaldi" style={{width: '100px'}} />
+            <img src={logo} alt="Logo guide museal" style={{width: '100px'}} />
           </Link>
           {/* Hamburger menu */}
           <div className="navbar-burger burger" data-target="navMenu">
@@ -89,7 +89,7 @@ const Header = class extends React.Component {
           <BrowserView viewClassName='navbar-item has-dropdown is-hoverable'>
             <RootMenu
               langKey={props.langKey}
-              base={"/" + props.langKey + "/" + menuTree.artworks[sel] +"/"}
+              base={"/" + props.langKey + "/" + menuTree.axes[sel] +"/"}
               baseName="test"
               switches={keys}
               links={menu}
@@ -98,7 +98,7 @@ const Header = class extends React.Component {
           <MobileView viewClassName='navbar-item has-dropdown is-hoverable'>
             <RootMenuMobile
               langKey={props.langKey}
-              base={"/" + props.langKey + "/" + menuTree.artworks[sel] +"/"}
+              base={"/" + props.langKey + "/" + menuTree.axes[sel] +"/"}
               baseName="test"
               switches={keys}
               links={menu}

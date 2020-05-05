@@ -35,7 +35,7 @@ and much more...
 
 With this starter you can switch between different languages pages with different names for example:
 
-`en/artworks/`
+`en/axes/`
 
 to
 

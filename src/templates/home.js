@@ -6,7 +6,7 @@ import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
 //import IconMenu from '../components/IconMenu'
-import iconLinks from '../data/artworksMenu'
+import iconLinks from '../data/axesMenu'
 import select from '../components/utils'
 //import Slider from '../components/Slider'
 //import Banner from '../components/Banner'
@@ -142,10 +142,10 @@ class HomePage extends React.Component {
             contentComponent={HTMLContent}
             title={dataMarkdown.frontmatter.title}
             content={dataMarkdown.html}
-            firstLink={iconLinks.painting[sel]}
+            /*firstLink={iconLinks.painting[sel]}
             secondLink={iconLinks.sculpture[sel]}
             thirdLink={iconLinks.performance[sel]}
-            fourthLink={iconLinks.interactivity[sel]}
+            fourthLink={iconLinks.interactivity[sel]}*/
             tags={tags}
             langKey={langKey}
              />

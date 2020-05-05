@@ -22,12 +22,12 @@
     },
     {
       "id": "05",
-      "en": "artworks",
-      "fr": "galerie"
+      "en": "navigation",
+      "fr": "navigation"
     },
     {
       "id": "06",
-      "en": "artworks/sculpture/marble",
+      "en": "axes/sculpture/marble",
       "fr": "galerie/scultura/marmo"
     },
     {
@@ -42,22 +42,22 @@
     },
     {
       "id": "09",
-      "en": "artworks/painting",
+      "en": "axes/painting",
       "fr": "galerie/pittura"
     },
     {
       "id": "10",
-      "en": "artworks/sculpture/introduction",
+      "en": "axes/sculpture/introduction",
       "fr": "galerie/scultura/introduzione"
     },
     {
       "id": "11",
-      "en": "artworks/performance/introduction",
+      "en": "axes/performance/introduction",
       "fr": "opere/performance/introduzione"
     },
     {
       "id": "12",
-      "en": "artworks/new-media/aumgmented-reality",
+      "en": "axes/new-media/aumgmented-reality",
       "fr": "opere/new-media/realtà-aumentata"
     },
     {
@@ -77,67 +77,67 @@
     },
     {
       "id": "16",
-      "en": "artworks/portfolio",
+      "en": "axes/portfolio",
       "fr": "opere/portfolio"
     },
     {
       "id": "17",
-      "en": "artworks/painting/new/abstract-art-persimmon-among-the-stars",
+      "en": "axes/painting/new/abstract-art-persimmon-among-the-stars",
       "fr": "opere/pittura/nuova/arte-astratta-caco-tra-le-stelle"
     },
     {
       "id": "18",
-      "en": "artworks/painting/introduction",
+      "en": "axes/painting/introduction",
       "fr": "opere/pittura/introduzione"
     },
     {
       "id": "19",
-      "en": "artworks/painting/new",
+      "en": "axes/painting/new",
       "fr": "opere/pittura/nuova"
     },
     {
       "id": "20",
-      "en": "artworks/painting/oldest",
+      "en": "axes/painting/oldest",
       "fr": "opere/pittura/archivio"
     },
     {
       "id": "21",
-      "en": "artworks/sculpture/bronze",
+      "en": "axes/sculpture/bronze",
       "fr": "opere/scultura/bronzo"
     },
     {
       "id": "22",
-      "en": "artworks/sculpture/wood",
+      "en": "axes/sculpture/wood",
       "fr": "opere/scultura/legno"
     },
     {
       "id": "23",
-      "en": "artworks/sculpture/other-materials",
+      "en": "axes/sculpture/other-materials",
       "fr": "opere/scultura/altri-materiali"
     },
     {
       "id": "24",
-      "en": "artworks/performance/performance01",
+      "en": "axes/performance/performance01",
       "fr": "opere/performance/performance01"
     },
     {
       "id": "25",
-      "en": "artworks/performance/performance02",
+      "en": "axes/performance/performance02",
       "fr": "opere/performance/performance02"
     },
     {
       "id": "26",
-      "en": "artworks/performance/performance03",
+      "en": "axes/performance/performance03",
       "fr": "opere/performance/performance03"
     },
     {
       "id": "27",
-      "en": "artworks/performance/performance04",
+      "en": "axes/performance/performance04",
       "fr": "opere/performance/performance04"
     },
     {
       "id": "28",
-      "en": "artworks/new-media/experimental",
+      "en": "axes/new-media/experimental",
       "fr": "opere/new-media/experimental"
     }
   ]

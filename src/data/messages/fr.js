@@ -11,7 +11,8 @@ module.exports = {
     } taggato  con`,
   'home': 'Accueil',
   'about': 'A propos',
-  'artworks': 'Artworks',
+  'axes': 'Axes',
+  'acces_art': 'Acces à l\'art',
   'introduction': 'Introduction',
   'portfolio': 'Portfolio',
   'painting': 'Pittura',
@@ -65,4 +66,5 @@ module.exports = {
   'menu-icon-sculpture': "Scultura",
   'menu-icon-performance': "Performance",
   'menu-icon-interactivity': "Interattività",
+  'navigation':"Navigation",
 };

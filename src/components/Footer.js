@@ -29,8 +29,8 @@ const Footer = class extends React.Component {
                     <ul className="menu-list">
                       <li><Link to={"/" + props.langKey} className="navbar-item"><FormattedMessage id="home" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.about[sel] +"/"}><FormattedMessage id="about" /></Link></li>
-                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.artworks[sel] +"/"}>
-                        <FormattedMessage id="artworks" />
+                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.axes[sel] +"/"}>
+                        <FormattedMessage id="axes" />
                       </Link>
                     </li>
                     <li><a
