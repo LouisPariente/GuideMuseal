@@ -1,30 +1,28 @@
 ---
 id: '04'
-title: "Pagina di contatto"
-description: "Pagina per contattarmi"
+title: "Contactez nous!"
+description: "Page de contact"
 templateKey: contacts
 tags:
   - web
-lang: it
+lang: fr
 image: /img/PersimmonHD.jpg
 date: "08-03-2019"
-address: "Piazza Unità d'Italia, 34121 Trieste TS"
-phone: '+3900123456789'
-email: 'kaki@kaki.com'
-linkinsta: 'kaki'
-instagram: '@kaki'
+address: "Avenue de l'université, 76800 Saint-Étienne-Du-Rouvray"
+phone: ''
+email: 'contact@guidemuseal.org'
+linkinsta: ''
+instagram: ''
 locations:
-  lat: 45.6500779
-  lng: 13.7677618
-  message: 'Kaki è qui!'
+  lat: 49.387101
+  lng: 1.068977
+  message: 'LITIS'
 imageCardSL:
-  alt: "immagine"
-  image: /img/128x128.png
-  name: John Kaki
-  description: Sono un artista visivo, seguimi in questa avventura...!
-  website: www.kaki.com
-path: /it/contatto
-slug: /it/contatto
+  alt: "image"
+  image: /img/litis.png
+  name: LITIS Lab
+  description: Laboratoire d'informatique, de traitement de l'information et des systèmes
+  website: www.litislab.fr
+path: /fr/contact
+slug: /fr/contact
 ---
-
-In questa pagina di contatto potete inviare un messaggio e-mail.

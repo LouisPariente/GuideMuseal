@@ -27,7 +27,7 @@ testimonials:
       survived only some persimmon trees.
 imageCardSL:
   alt: "image"
-  image: /img/128x128.png
+  image: /img/litis.png
   name: John Kaki
   description: I am a visual artist, follow me in this adventure...!
   website: www.kaki.com

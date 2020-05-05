@@ -24,7 +24,7 @@ function setActionPath(langKey) {
   if(langKey==='en'){
     path = '/en/contact/thanks/';
   }else{
-    path = '/it/contatto/grazie/';
+    path = '/fr/contact/merci/';
   }
   return path;
 }
@@ -32,8 +32,6 @@ function setActionPath(langKey) {
 const ContactPageTemplate = ({
   title, content, contentComponent,
   infos, image, address, phone, email,
-  handleSubmit, handleChange, action,
-  option, optionA, optionB, optionC
 }) => {
   const PageContent = contentComponent || Content
   return (
@@ -49,107 +47,8 @@ const ContactPageTemplate = ({
       phone={phone}
       email={email}
       />
-    <div className="box">
-    <h4 className="subtitle"><FormattedMessage id="contact.fill-the-form"/></h4>
-      <form
-        name="contact"
-        method="post"
-        action={action}
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-        <input type="hidden" name="form-name" value="contact" />
-        <div hidden>
-          <label>
-            Don’t fill this out:{" "}
-            <input name="bot-field" onChange={handleChange} />
-          </label>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="name" ><FormattedMessage id="contact.name"/></label>
-          <div className="control">
-            <input className="input" type="text" name="name" onChange={handleChange} id="name" required={true} />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="surname" ><FormattedMessage id="contact.surname"/></label>
-          <div className="control">
-            <input className="input" type="text" name="surname" onChange={handleChange} id="surname" required={true} />
-          </div>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="email"><FormattedMessage id="contact.email"/></label>
-            <div className="control">
-              <input className="input" type="email" name="email" onChange={handleChange} id="email" required={true} />
-            </div>
-          </div>
-          <div className="field">
-           <label className="label" htmlFor="subject"><FormattedMessage id="contact.subject"/></label>
-             <div className="control">
-               <input className="input" type="subject" name="subject" onChange={handleChange} id="subject" required={true} />
-            </div>
-        </div>
-        <div className="field">
-          <div className="control">
-          <label className="radio menu-names">
-            <input
-              type="radio"
-              name="gender-male"
-              value="male"
-              onChange={handleChange}
-              defaultChecked
-            />
-            <span><FormattedMessage id="contact.gender.male"/></span>
-          </label>
-          <label className="radio">
-            <input
-              type="radio"
-              name="gender-female"
-              value="female"
-              onChange={handleChange}
-            />
-            <span><FormattedMessage id="contact.gender.female"/></span>
-          </label>
-        </div>
-        </div>
-        <div className="field">
-        <label className="label">
-        <p className="content has-text-weight-semibold">{option}</p>
-            <div className="select">
-            <select
-              className="content"
-              name="type-enquiry"
-              defaultValue="Type of Enquiry"
-              onChange={handleChange}
-              required
-            >
-              <option name="options" disabled hidden>
-                Choose
-              </option>
-              <option>{optionA}</option>
-              <option>{optionB}</option>
-              <option>{optionC}</option>
-            </select>
-            </div>
-          </label>
-        </div>
-        <div className="field">
-          <label className="label" htmlFor="message"><FormattedMessage id="contact.message"/></label>
-          <div className="control">
-            <textarea className="textarea" name="message" onChange={handleChange} id="message" required={true} />
-          </div>
-        </div>
-        <div className="field">
-        <div className="control">
-          <button className="button is-link" type="submit"><FormattedMessage id="contact.send"/></button>
-        </div>
-        </div>
-      </form>
       </div>
-      </div>
-      </div>
+    </div>
     </section>
 )
 }
