@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/guide-museal.jpg'
+import logo from '../img/logo2.png'
 import { FaHome, FaQuestion, FaImage, FaPenAlt, FaAmericanSignLanguageInterpreting } from 'react-icons/fa';
 import SelectLanguage from './SelectLanguage';
 import { FormattedMessage } from 'react-intl';
@@ -72,7 +72,7 @@ const Header = class extends React.Component {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Logo guide museal" style={{width: '100px'}} />
+            <img src={logo} alt="Logo guide museal" style={{width: '120px'}} />
           </Link>
           {/* Hamburger menu */}
           <div className="navbar-burger burger" data-target="navMenu">
@@ -107,8 +107,8 @@ const Header = class extends React.Component {
           <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.about[sel] +"/"}>
             <FaQuestion className="menu-names" /> <FormattedMessage id="about" />
           </Link>
-          <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.blog[sel] +"/"}>
-            <FaPenAlt className="menu-names" /> <FormattedMessage id="blog" />
+          <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}>
+            <FaPenAlt className="menu-names" /> <FormattedMessage id="tapestry" />
           </Link>
           <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.contact[sel] +"/"}>
             <FaAmericanSignLanguageInterpreting className="menu-names" /> <FormattedMessage id="contact" />

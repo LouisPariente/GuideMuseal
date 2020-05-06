@@ -17,7 +17,7 @@ const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
       <li className="flags" key={lang.langKey} selected={lang.selected}>
         <Link to={lang.link} alt={lang.langKey} style={{
-          color: '#D64000'
+          color: '#b71540'
         }}>
         {getIcon(lang.langKey)}
           </Link>
@@ -27,7 +27,7 @@ const SelectLanguage = (props) => {
   return (
     <div className="section" style={{ padding: '1.5rem' }}>
       <header style={{
-        color: '#D64000'
+        color: '#b71540'
       }}>
         <FormattedMessage id="selectLanguage" />
       </header>

@@ -21,7 +21,7 @@ imageCardSL:
   alt: "image"
   image: /img/litis.png
   name: LITIS Lab
-  description: Laboratoire d'informatique, de traitement de l'information et des systèmes
+  description:
   website: www.litislab.fr
 path: /fr/contact
 slug: /fr/contact

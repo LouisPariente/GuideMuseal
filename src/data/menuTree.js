@@ -3,6 +3,6 @@ module.exports = {
   'navigation': ['navigation', 'navigation'],
   'acces_art': ['art_accessibility','acces_art'],
   'about': ['about', 'presentation'],
-  'blog': ['blog', 'blog'],
+  'tapestry': ['tapestry', 'tapisserie'],
   'contact': ['contact', 'contact']
 };

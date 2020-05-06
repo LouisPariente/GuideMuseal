@@ -6,7 +6,7 @@ import menuTree from '../data/menuTree'
 import { FaFacebook, FaTwitter, FaInstagram, FaVimeo, FaLinkedin } from 'react-icons/fa';
 import Copyright from '../components/Copyright'
 import ScrollToTop from '../components/ScrollToTop'
-import logo from '../img/logo.svg'
+import logo from '../img/logo2.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -18,7 +18,7 @@ const Footer = class extends React.Component {
           <img
             src={logo}
             alt="Kaldi"
-            style={{ width: '14em', height: '5em' }}
+            style={{ width: '20em', height: '6em' }}
           />
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
@@ -48,7 +48,7 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                   <li>
-                    <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.blog[sel] +"/"}>
+                    <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}>
                       <FormattedMessage id="blog" />
                     </Link>
                   </li>

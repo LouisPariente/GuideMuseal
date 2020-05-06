@@ -67,4 +67,5 @@ module.exports = {
   'menu-icon-performance': "Performance",
   'menu-icon-interactivity': "Interattività",
   'navigation':"Navigation",
+  'tapestry':"Tapisserie",
 };
