@@ -16,59 +16,18 @@ const RootMenuMobile = ( props ) => {
 
     const langKey = props.langKey;
     //console.log(langKey);
-    const keys_P = [ 'introduction', 'painting-new', 'painting-oldest' ];
-    const keys_S = [ 'introduction', 'marble', 'wood', 'bronze', 'other-materials' ];
-    const keys_Perf = [ 'performance01', 'performance02', 'performance03', 'performance04' ];
-    const keys_NM = [ 'augmented_reality', 'interactivity', 'experimental' ];
     const sel = select(props.langKey);
 
     return(
     <div className='navbar-item has-dropdown is-hoverable'>
-      <Link className="navbar-link" to={ "/" + props.langKey + "/" + menuTree.axes[sel] + "/" }>
-          <FaImage className="menu-names" />
-          <FormattedMessage id="axes"/>
-      </Link>
+        <Link classname="navbar-link" to={"/" + props.langKey + "/" + menuTree.navigation[sel] + "/" }>
+          <FormattedMessage id="navigation"/>
+        </Link>
         <div className="content">
-          <Link className="navbar-item" to={ menu.portfolio[sel] }>
-            <FormattedMessage id="portfolio"/>
+          <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.acces_art[sel] + "/"}>
+            <FormattedMessage id="acces_art"/>
           </Link>
           <div className="navbar-item ">
-        {/* accordion begin */}
-        <AccordionCollaps
-        num='1'
-        langKey={langKey}
-        base={ menu_P.introduction[sel] }
-        baseName="painting"
-        switches={keys_P}
-        links={menu_P}
-        />
-        {/*Sculpture menu}
-      <AccordionCollaps
-        num='2'
-        langKey={langKey}
-        base={ menu_S.introduction[sel] }
-        baseName="sculpture"
-        switches={keys_S}
-        links={menu_S}
-        />
-    {*/}
-        <AccordionCollaps
-        num='3'
-        langKey={langKey}
-        base={ menu_Perf.performance01[sel] }
-        baseName="performance"
-        switches={keys_Perf}
-        links={menu_Perf}
-        />
-        <AccordionCollaps
-        num='4'
-        langKey={langKey}
-        base={ menu_NM.augmented_reality[sel] }
-        baseName="new-media"
-        switches={keys_NM}
-        links={menu_NM}
-        />
-        {/* end_accordion */}
       </div>
     </div>
 </div>
