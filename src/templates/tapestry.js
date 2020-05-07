@@ -58,7 +58,7 @@ class TapestryPage extends React.Component {
         <audio src="/sound/var-det-du.mp3" controls>
             Votre navigateur ne semble pas supporter ce fichier audio
         </audio>
-        <img src="/img/4504.jpg"></img>
+        <img src="/img/4504_low.jpg"></img>
 
         </Layout>
       )
