@@ -58,23 +58,6 @@ const Footer = class extends React.Component {
                   </ul>
                 </section>
                 </div>
-                <div className="column is-4 social">
-                  <a title="facebook" href="https://facebook.com">
-                     <FaFacebook className="facebook-icon"  size="2em"/>
-                  </a>
-                  <a title="twitter" href="https://twitter.com">
-                    <FaTwitter className="twitter-icon"  size="2em"/>
-                  </a>
-                  <a title="instagram" href="https://instagram.com">
-                    <FaInstagram className="instagram-icon" size="2em"/>
-                  </a>
-                  <a title="vimeo" href="https://vimeo.com">
-                    <FaVimeo className="vimeo-icon"  size="2em"/>
-                  </a>
-                  <a title="linkedin" href="https://linkedin.com">
-                    <FaLinkedin className="linkedin-icon"  size="2em"/>
-                  </a>
-                </div>
               </div>
             </div>
             <Copyright />
