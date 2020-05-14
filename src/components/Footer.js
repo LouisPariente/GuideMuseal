@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import select from '../components/utils'
 import { FormattedMessage } from 'react-intl';
 import menuTree from '../data/menuTree'
-import { FaFacebook, FaTwitter, FaInstagram, FaVimeo, FaLinkedin } from 'react-icons/fa';
+//import { FaFacebook, FaTwitter, FaInstagram, FaVimeo, FaLinkedin } from 'react-icons/fa';
 import Copyright from '../components/Copyright'
 import ScrollToTop from '../components/ScrollToTop'
 import logo from '../img/logo2.png'

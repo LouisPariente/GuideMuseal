@@ -5,6 +5,8 @@ import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
+import ImageMapper from 'react-image-mapper'; 
+import ReactDOM from 'react-dom';
 
 const TapestryPageTemplate = ({ title, content, contentComponent, tags, langKey }) => {
     const PageContent = contentComponent || Content
@@ -28,37 +30,37 @@ TapestryPageTemplate.propTypes = {
 }
 
 class TapestryPage extends React.Component {
-
+  
     render() {
       var dataMarkdown = [];
       if (this.props.data !== null) {
         dataMarkdown = this.props.data.markdownRemark
       }
       const jsonData = this.props.data.allArticlesJson.edges[0].node.articles;
-      const { frontmatter } = dataMarkdown;
-      const image = frontmatter.image.childImageSharp.fluid.src;
-      const langKey = frontmatter.lang;
-      const tags = frontmatter.tags;
+      const texte_defaut = <h1>Survolez un element pour avoir des informations</h1>
+      const texte_roi = <h1>ZONE 1 A COMPLETER</h1>;
+      function setText(){
+        ReactDOM.render(texte_roi, document.getElementById('root'));
+      }
+      function setDefaut(){
+        ReactDOM.render(texte_defaut, document.getElementById('root'));
+      }
+      
       return (
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
-          <SEO
-            frontmatter={frontmatter}
-            postImage={image}
-          />
-          <div>
-              <TapestryPageTemplate
-              contentComponent={HTMLContent}
-              title={dataMarkdown.frontmatter.title}
-              content={dataMarkdown.html}
-              tags={tags}
-              langKey={langKey}
-               />
-          </div>
         <div>Musique : Var Det Du · Ensemble Galilei</div>
         <audio src="/sound/var-det-du.mp3" controls>
             Votre navigateur ne semble pas supporter ce fichier audio
         </audio>
-        <img src="/img/4504_low.jpg"></img>
+        <div class="container_image">
+          <img src="/img/4501_low.jpg" usemap="#tapisserie"/>
+          <div id="root" class="top_right">Survolez un élément pour avoir des informations</div>
+        </div>
+        <map name="tapisserie">
+            <area class="zoom" shape="poly" coords="650,272,735,250,745,320,793,346,835,411,843,525,815,579,706,587,666,487,682,374,708,340"
+            onMouseOver={(setText)} onMouseOut={(setDefaut)}/>
+        </map>
+        
 
         </Layout>
       )
