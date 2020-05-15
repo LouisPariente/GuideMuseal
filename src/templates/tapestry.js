@@ -38,7 +38,9 @@ class TapestryPage extends React.Component {
       }
       const jsonData = this.props.data.allArticlesJson.edges[0].node.articles;
       const texte_defaut = <h1>Survolez un element pour avoir des informations</h1>
-      const texte_roi = <h1>ZONE 1 A COMPLETER</h1>;
+      const texte_roi = <h1>Guillaume et ses témoins rencontrent pour la première fois Harold.
+      La position de Guillaume étant la même que celle du roi Edouard établit 
+      </h1>;
       function setText(){
         ReactDOM.render(texte_roi, document.getElementById('root'));
       }
@@ -48,16 +50,16 @@ class TapestryPage extends React.Component {
       
       return (
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
-        <div>Musique : Var Det Du · Ensemble Galilei</div>
-        <audio src="/sound/var-det-du.mp3" controls>
+        <div>Explications de la scene</div>
+        <audio src="/sound/william1.wav" controls>
             Votre navigateur ne semble pas supporter ce fichier audio
-        </audio>
+        </audio> <br></br>
         <div class="container_image">
-          <img src="/img/4501_low.jpg" usemap="#tapisserie"/>
+          <img src="/img/4525_low.jpg" usemap="#tapisserie"/>
           <div id="root" class="top_right">Survolez un élément pour avoir des informations</div>
         </div>
         <map name="tapisserie">
-            <area class="zoom" shape="poly" coords="650,272,735,250,745,320,793,346,835,411,843,525,815,579,706,587,666,487,682,374,708,340"
+            <area shape="rect" coords="800,340,1150,800"
             onMouseOver={(setText)} onMouseOut={(setDefaut)}/>
         </map>
         
