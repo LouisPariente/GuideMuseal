@@ -6,8 +6,8 @@ import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
 //import IconMenu from '../components/IconMenu'
-import iconLinks from '../data/axesMenu'
-import select from '../components/utils'
+//import iconLinks from '../data/axesMenu'
+//import select from '../components/utils'
 //import Slider from '../components/Slider'
 //import Banner from '../components/Banner'
 //import Testimonials from '../components/Testimonials'
@@ -17,16 +17,10 @@ const HomePageTemplate = ({
   imageCardSL,
   image,
   heading,
-  //mainpitch,
-  //main,
-  //testimonials,
+
   title,
   content,
   contentComponent,
-  //firstLink,
-  //secondLink,
-  //thirdLink,
-  //fourthLink,
   tags,
   langKey
 }) => {
@@ -117,9 +111,6 @@ class HomePage extends React.Component {
     const jsonData = data.allArticlesJson.edges[0].node.articles;
     const langKey = dataMarkdown.frontmatter.lang
     const { frontmatter } = data.markdownRemark;
-    //const { display } = frontmatter.slider;
-    //const { array } = frontmatter.slider;
-    const sel = select(langKey);
     const image = frontmatter.image.childImageSharp.fluid.src;
     const tags = frontmatter.tags;
 
@@ -134,18 +125,12 @@ class HomePage extends React.Component {
             imageCardSL={dataMarkdown.frontmatter.imageCardSL}
             image={dataMarkdown.frontmatter.image}
             heading={dataMarkdown.frontmatter.heading}
-            //display={display}
-            //array={array}
             mainpitch={dataMarkdown.frontmatter.mainpitch}
             main={dataMarkdown.frontmatter.main}
             testimonials={dataMarkdown.frontmatter.testimonials}
             contentComponent={HTMLContent}
             title={dataMarkdown.frontmatter.title}
             content={dataMarkdown.html}
-            /*firstLink={iconLinks.painting[sel]}
-            secondLink={iconLinks.sculpture[sel]}
-            thirdLink={iconLinks.performance[sel]}
-            fourthLink={iconLinks.interactivity[sel]}*/
             tags={tags}
             langKey={langKey}
              />
@@ -199,13 +184,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        mainpitch {
-          heading
-          subheading
-          title
-          description
-          link
-        }
         slider{
           display
           array{
@@ -228,18 +206,6 @@ export const pageQuery = graphql`
           name
           description
           website
-        }
-        main {
-          image1 {
-              alt
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 500, quality: 90) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
-           }
         }
         testimonials {
           author
