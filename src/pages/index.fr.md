@@ -7,7 +7,7 @@ tags:
   - web
 lang: fr
 date: "05-03-2019"
-image: /img/4504_test_low.jpg
+image: /img/4501_low.jpg
 heading: "A la decouverte du musée de la tapisserie de Bayeux"
 imageCardSL:
   alt: "image"

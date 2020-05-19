@@ -1,4 +1,4 @@
 module.exports = {
-  'navigation': ['/en/axes/navigation/','/fr/axes/navigation/'],
-  'acces': ['/en/axes/acces/','/fr/axes/acces/'],
+  'navigation': ['/en/navigation/','/fr/navigation/'],
+  'acces': ['/en/acces_art/','/fr/acces_art/'],
 };

@@ -7,7 +7,7 @@ tags:
   - web
 lang: fr
 date: "05-03-2019"
-image: /img/4504_test_low.jpg
+image: /img/4519_low.jpg
 heading: "Les differentes équipes qui travaillent sur le projet"
 imageCardSL:
   alt: "image"
