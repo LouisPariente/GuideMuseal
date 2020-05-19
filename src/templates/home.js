@@ -11,7 +11,7 @@ import Content, { HTMLContent } from "../components/Content"
 //import Slider from '../components/Slider'
 //import Banner from '../components/Banner'
 //import Testimonials from '../components/Testimonials'
-import CardSlide from '../components/CardSlide'
+//import CardSlide from '../components/CardSlide'
 
 const HomePageTemplate = ({
   imageCardSL,
@@ -80,11 +80,7 @@ const HomePageTemplate = ({
           <PageContent className="container content" content={content} />
             <TagList tags={tags} langKey={langKey}/>
         </section>
-       <CardSlide
-       imageInfo={imageCardSL}
-       name={imageCardSL.name}
-       description={imageCardSL.description}
-       website={imageCardSL.website}/>
+
 
       </div>
 )
@@ -131,7 +127,6 @@ class HomePage extends React.Component {
             contentComponent={HTMLContent}
             title={dataMarkdown.frontmatter.title}
             content={dataMarkdown.html}
-            tags={tags}
             langKey={langKey}
              />
         </div>
