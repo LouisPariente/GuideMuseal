@@ -39,7 +39,7 @@ class TapestryPage extends React.Component {
       const jsonData = this.props.data.allArticlesJson.edges[0].node.articles;
       const texte_defaut = <h1>Survolez un element pour avoir des informations</h1>
       const texte_roi = <h1>Guillaume et ses témoins rencontrent pour la première fois Harold.
-      La position de Guillaume étant la même que celle du roi Edouard établit 
+      La position de Guillaume étant la même que celle du roi Edouard au début de la tapisserie 
       </h1>;
       function setText(){
         ReactDOM.render(texte_roi, document.getElementById('root'));
@@ -49,22 +49,39 @@ class TapestryPage extends React.Component {
       }
       
       return (
+
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
         <div>Explications de la scene</div>
         <audio src="/sound/william1.wav" controls>
             Votre navigateur ne semble pas supporter ce fichier audio
         </audio> <br></br>
-        <div class="container_image">
-          <img src="/img/4525_low.jpg" usemap="#tapisserie"/>
-          <div id="root" class="top_right">Survolez un élément pour avoir des informations</div>
+
+        <div class="high-res">
+          <div class="container_image">
+            <img src="/img/4525_low.jpg" usemap="#tapisserie"/>
+            <div id="root" class="top_right">Survolez un élément pour avoir des informations</div>
+          </div>
+
+          <map name="tapisserie">
+              <area shape="rect" coords="800,340,1150,800"
+              onMouseOver={(setText)} onMouseOut={(setDefaut)}/>
+          </map>
         </div>
-        <map name="tapisserie">
-            <area shape="rect" coords="800,340,1150,800"
-            onMouseOver={(setText)} onMouseOut={(setDefaut)}/>
-        </map>
-        
+
+        <div class="affichage_mobile">
+          <div class="container_image">
+            <img src="/img/4525_low_2.jpg" usemap="#tapisserie"/>
+            <div id="root" class="top_right">Survolez un élément pour avoir des informations</div>
+          </div>
+
+          <map name="tapisserie">
+              <area shape="rect" coords="800,340,1150,800"
+              onMouseOver={(setText)} onMouseOut={(setDefaut)}/>
+          </map>
+        </div>
 
         </Layout>
+
       )
     }
   }

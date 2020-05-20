@@ -166,9 +166,24 @@ footer.footer
   .card-content
     padding: 5%
 
-.container_image
-  position: relative
-  text-align: center
+@media (max-width: 1215px)
+  .high-res
+    display: none
+  .container_image
+    position: relative
+    text-align: center
+    min-width: 800px
+    max-width: 800px
+
+//Res > 1215px de large
+@media (min-width: 1215px)
+  .affichage_mobile
+    display: none
+  .container_image
+    position: relative
+    text-align: center
+    min-width: 1407px
+    max-width: 1407px
 
 .top_right
   width: 40%
@@ -181,3 +196,5 @@ footer.footer
   background-color: black
   opacity: 0.66
 @import "~bulma"
+
+  

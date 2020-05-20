@@ -87,7 +87,7 @@ Fig. 2 : Prototype F2T (à gauche). | Étude de concept (à droite)|
 </div>
 
 
-L’exploration est contrôlée par un Joystick sur support motorisé et mobile, qui communique par des variations de retour de force, permettant de créer différents effets passifs (en réponse aux mouvements de l’utilisateur) ou actifs (guidage). Une combinaison audio-tactile est possible aussi en incorporant des sons d’ambiance et de l’audiodescription (sémantique). Des évaluations préliminaires de la F2T ont été effectuées sur la reconnaissance de formes géométriques simples, des directions, des angles perçus et de structures spatiales (agencement de pièces).
+L’exploration est contrôlée par un micro-joystick sur support motorisé et mobile, qui communique par des variations de retour de force, permettant de créer différents effets passifs (en réponse aux mouvements de l’utilisateur) ou actifs (guidage). Une combinaison audio-tactile est possible aussi en incorporant des sons d’ambiance et de l’audiodescription (sémantique). Des évaluations préliminaires de la F2T ont été effectuées sur la reconnaissance de formes géométriques simples, des directions, des angles perçus et de structures spatiales (agencement de pièces).
 
 # 5.  Conclusion et perspectives
     

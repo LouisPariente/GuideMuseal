@@ -50,11 +50,6 @@ Institut d’Histoire des Représentations et des Idées dans les Modernités.
 Pour plus d'informations :
 ### <a href="http://ihrim.ens-lyon.fr/">www.ihrim.ens-lyon.fr</a>
 
-### Le projet est réalisé en partenariat avec le musée de la tapisserie de Bayeux
+### Musée de la tapisserie de Bayeux
 
-<div align="center">
-
-![Musée de la tapisserie de Bayeux](../img/logos/BAYEUX_Tapisserie_Logo-1.jpg)  |![Musées de Bayeux](../img/logos/logo_bayeux_museum.jpg) |
--------------------------|-------------------------|
-Musée de la tapisserie de Bayeux | Musées de Bayeux|
-</div>
+![Musée de la tapisserie de Bayeux](../img/logos/BAYEUX_Tapisserie_Logo-1.jpg) 
