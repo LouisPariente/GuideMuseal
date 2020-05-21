@@ -5,7 +5,6 @@ import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
-import ImageMapper from 'react-image-mapper'; 
 import ReactDOM from 'react-dom';
 
 const TapestryPageTemplate = ({ title, content, contentComponent, tags, langKey }) => {
@@ -87,29 +86,30 @@ class TapestryPage extends React.Component {
         </div>
         */
 
+        /* AUDIO A DEBUG
         let audio = new Audio("/sound/william1.wav")
         const start = () => {
           audio.play()
         }
-
+      */
       return (
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
           <audio id="audio" src="/sound/william1.wav"></audio>
           <div id="container_tapisserie">
             <div class="william">
-                <img onClick={(start)} src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
+                <img  src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
             </div>
             <div class="droite">
-                <img onClick={(start)} src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
+                <img  src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
             </div>           
           </div>
 
           <div id="anim_cartes">
             <div class="william2">
-              <img onClick={(start)} src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
+              <img  src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
             </div>
             <div class="knight2">
-                <img onClick={(start)} src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
+                <img src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
             </div> 
           </div>
         </Layout>
