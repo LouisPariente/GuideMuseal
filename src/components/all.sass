@@ -200,62 +200,68 @@ footer.footer
   opacity: 0.66
 @import "~bulma"
 
-// VERSION PAR DESSUS LA TAPISSERIE
-#container_tapisserie
-  border: solid
-  width: 800px
-  height: 522px
-  background-image: url("/img/4525_low_800px.jpg")
 
-.william
-  width: 350px
-  height: 1px
-  margin-left: 430px
-  margin-top: 137px
+// VERSION GRANDE
+@media (min-width: 900px)
+  #container_tapisserie
+    width: 1476px
+    height: 970px
+    background-image: url("/img/4525_low.jpg")
 
-.william img
-  width: 300px 
-.william img:hover
-  width: 400px 
-  
+  .william
+    width: 650px
+    height: 0px
+    margin-left: 885px
+    margin-top: 362px
+    position: absolute
 
-.droite
-  width: 350px
-  height: 1px
-  margin-left: 2px
-  position: absolute
+  .william img
+    width: 380px 
+  .william img:hover
+    width: 400px 
+    
+  .knight
+    width: 646px
+    height: 1px
+    margin-left: 3px
+    position: absolute
+    margin-top: 240px
 
-.droite img
-  width: 300px 
-.droite img:hover
-  width: 400px 
+  .knight img
+    width: 553px 
+  .knight img:hover
+    width: 650px 
 
-// TEST VERSION 2
-#anim_cartes
-  margin-top: 100px
-  width: 800px
-  height: 522px
+// VERSION PETITE
+@media (max-width: 900px)
+  #container_tapisserie
+    width: 800px
+    height: 522px
+    background-image: url("/img/4525_low_800px.jpg")
 
-.william2
-  width: 400px
-  height: 0px
+  .william
+    width: 350px
+    height: 1px
+    margin-left: 430px
+    margin-top: 137px
+    position: absolute
 
-.william2 img
-  width: 300px 
-.william2 img:hover
-  width: 400px 
+  .william img
+    width: 300px 
+  .william img:hover
+    width: 400px 
+    
+  .knight
+    width: 350px
+    height: 1px
+    margin-left: 2px
+    position: absolute
+    margin-top: 139px
 
-.knight2
-  width: 400px
-  height: 1px
-  margin-left: 400px
-  position: absolute
-
-.knight2 img
-  width: 300px 
-.knight2 img:hover
-  width: 400px 
-
+  .knight img
+    width: 300px 
+  .knight img:hover
+    width: 400px 
 
 
   

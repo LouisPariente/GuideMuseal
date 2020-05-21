@@ -3,9 +3,8 @@ import * as PropTypes from "prop-types"
 import TagList from '../components/TagList'
 import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
-import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
-import ReactDOM from 'react-dom';
+
 
 const TapestryPageTemplate = ({ title, content, contentComponent, tags, langKey }) => {
     const PageContent = contentComponent || Content
@@ -36,82 +35,18 @@ class TapestryPage extends React.Component {
         dataMarkdown = this.props.data.markdownRemark
       }
       const jsonData = this.props.data.allArticlesJson.edges[0].node.articles;
-      const texte_defaut = <h1>Survolez un element pour avoir des informations</h1>
-      const texte_roi = <h1>Guillaume et ses témoins rencontrent pour la première fois Harold.
-      La position de Guillaume étant la même que celle du roi Edouard au début de la tapisserie 
-      </h1>;
-      // Fonctions High res
-      function setDefautHigh(){
-        ReactDOM.render(texte_defaut, document.getElementById('text_high'));
-      }
-      function setTextHigh(){
-        ReactDOM.render(texte_roi, document.getElementById('text_high'));
-      }
-      // Fonctions low res
-      function setDefautLow(){
-        ReactDOM.render(texte_defaut, document.getElementById('text_low'));
-      }
-      function setTextLow(){
-        ReactDOM.render(texte_roi, document.getElementById('text_low'));
-      }
-      /* Save olg tapestry
-              <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
-        <div>Explications de la scene</div>
-        <audio src="/sound/william1.wav" controls>
-            Votre navigateur ne semble pas supporter ce fichier audio
-        </audio> <br></br>
 
-        <div class="high_res">
-          <div class="container_image">
-            <img src="/img/4525_low.jpg" usemap="#tapisserie"/>
-            <div id="text_high" class="top_right">Survolez un élément pour avoir des informations</div>
-          </div>
-
-          <map name="tapisserie">
-              <area shape="rect" coords="800,340,1150,800"
-              onMouseOver={(setTextHigh)} onMouseOut={(setDefautHigh)}/>
-          </map>
-        </div>
-
-        <div class="low_res">
-          <div class="container_image">
-            <img src="/img/4525_low_800px.jpg" usemap="#tapisserie_2"/>
-            <div id="text_low" class="top_right">plop un élément pour avoir des informations</div>
-          </div>
-
-          <map name="tapisserie_2">
-              <area shape="rect" coords="457,221,617,441"
-              onMouseOver={(setTextLow)} onMouseOut={(setDefautLow)}/>
-          </map>
-        </div>
-        */
-
-        /* AUDIO A DEBUG
-        let audio = new Audio("/sound/william1.wav")
-        const start = () => {
-          audio.play()
-        }
-      */
       return (
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
-          <audio id="audio" src="/sound/william1.wav"></audio>
           <div id="container_tapisserie">
             <div class="william">
-                <img  src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/no_bg_william_card_resize.png" alt="zoom test" />
             </div>
-            <div class="droite">
-                <img  src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
+            <div class="knight">
+                <img  src="/img/cartes/adapted/no_bg_knight_card_resize.png" alt="zoom test" />
             </div>           
           </div>
-
-          <div id="anim_cartes">
-            <div class="william2">
-              <img  src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
-            </div>
-            <div class="knight2">
-                <img src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
-            </div> 
-          </div>
+        
         </Layout>
 
       )
