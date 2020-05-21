@@ -55,10 +55,8 @@ class TapestryPage extends React.Component {
       function setTextLow(){
         ReactDOM.render(texte_roi, document.getElementById('text_low'));
       }
-
-      return (
-
-        <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
+      /* Save olg tapestry
+              <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
         <div>Explications de la scene</div>
         <audio src="/sound/william1.wav" controls>
             Votre navigateur ne semble pas supporter ce fichier audio
@@ -87,7 +85,33 @@ class TapestryPage extends React.Component {
               onMouseOver={(setTextLow)} onMouseOut={(setDefautLow)}/>
           </map>
         </div>
+        */
 
+        let audio = new Audio("/sound/william1.wav")
+        const start = () => {
+          audio.play()
+        }
+
+      return (
+        <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
+          <audio id="audio" src="/sound/william1.wav"></audio>
+          <div id="container_tapisserie">
+            <div class="william">
+                <img onClick={(start)} src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
+            </div>
+            <div class="droite">
+                <img onClick={(start)} src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
+            </div>           
+          </div>
+
+          <div id="anim_cartes">
+            <div class="william2">
+              <img onClick={(start)} src="/img/cartes/no_bg_william_card.png" alt="zoom test" />
+            </div>
+            <div class="knight2">
+                <img onClick={(start)} src="/img/cartes/no_bg_knight_card.png" alt="zoom test" />
+            </div> 
+          </div>
         </Layout>
 
       )
