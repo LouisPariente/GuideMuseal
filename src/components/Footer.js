@@ -28,6 +28,7 @@ const Footer = class extends React.Component {
                 <section className="menu">
                     <ul className="menu-list">
                       <li><Link to={"/" + props.langKey} className="navbar-item"><FormattedMessage id="home" /></Link></li>
+                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.f2t[sel] +"/"}><FormattedMessage id="F2T" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.about[sel] +"/"}><FormattedMessage id="about" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.navigation[sel] +"/"}><FormattedMessage id="navigation" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.acces_art[sel] +"/"}><FormattedMessage id="acces_art" /></Link></li>

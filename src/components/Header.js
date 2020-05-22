@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo2.png'
-import { FaHome, FaQuestion, FaImage, FaPenAlt, FaAmericanSignLanguageInterpreting } from 'react-icons/fa';
+import { FaHome, FaQuestion, FaTabletAlt, FaPenFancy, FaAmericanSignLanguageInterpreting } from 'react-icons/fa';
 import SelectLanguage from './SelectLanguage';
 import { FormattedMessage } from 'react-intl';
 import menuTree from '../data/menuTree'
@@ -86,6 +86,9 @@ const Header = class extends React.Component {
           <Link className="navbar-item" to={"/" + props.langKey}>
             <FaHome className="menu-names" /> <FormattedMessage id="home" />
           </Link>
+          <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.f2t[sel] +"/"}>
+            <FaTabletAlt className="menu-names" /> <FormattedMessage id="F2T" />
+          </Link>
           <BrowserView viewClassName='navbar-item has-dropdown is-hoverable'>
             <RootMenu
               langKey={props.langKey}
@@ -108,7 +111,7 @@ const Header = class extends React.Component {
             <FaQuestion className="menu-names" /> <FormattedMessage id="about" />
           </Link>
           <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}>
-            <FaPenAlt className="menu-names" /> <FormattedMessage id="tapestry" />
+            <FaPenFancy className="menu-names" /> <FormattedMessage id="tapestry" />
           </Link>
           <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.contact[sel] +"/"}>
             <FaAmericanSignLanguageInterpreting className="menu-names" /> <FormattedMessage id="contact" />
