@@ -209,28 +209,43 @@ footer.footer
     background-image: url("/img/4525_low.jpg")
 
   .william
-    width: 650px
-    height: 0px
+    width: 380px
+    height: 485px
     margin-left: 885px
     margin-top: 362px
     position: absolute
-
-  .william img
-    width: 380px 
-  .william img:hover
-    width: 400px 
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -380px
+  .william:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible
+ 
     
   .knight
     width: 646px
-    height: 1px
+    height: 750px
     margin-left: 3px
     position: absolute
     margin-top: 240px
+    audio
+      visibility: hidden
+  
+  .knight:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible
 
   .knight img
     width: 553px 
-  .knight img:hover
-    width: 650px 
+
+  .knight audio
+    border: solid
+    margin-left: -545px
+    position: absolute
+
 
 // VERSION PETITE
 @media (max-width: 900px)
