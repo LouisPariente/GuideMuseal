@@ -5,60 +5,81 @@ import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
-import Slider from '../components/Slider'
-import Testimonials from '../components/Testimonials'
-import Features from '../components/Features'
 
 const ArtworkTemplate = ({
+  image,
+  heading,
   title,
   content,
   contentComponent,
-  intro,
-  heading,
-  description,
-  display,
-  array,
-  testimonials,
   tags,
   langKey
 }) => {
   const PageContent = contentComponent || Content
   return (
-      <div className="container content">
-       <h1 className="title animated bounceInLeft">{title}</h1>
-        <div className="hero">
-          <Slider array={array} display={display}/>
-            <div className="section">
-              <h2 className="has-text-weight-semibold subtitle">
-              {heading}
-              </h2>
-              <div className="container content">
-                {description}
-               </div>
-             </div>
-             <Features gridItems={intro.blurbs} />
-          </div>
-             <div className="container content">
-               <Testimonials testimonials={testimonials} />
-             </div>
-             <section className="section">
-               <PageContent className="container content" content={content} />
-                <TagList tags={tags} langKey={langKey}/>
-             </section>
+    <div>
+    <div
+  className="full-width-image margin-top-0"
+  style={{
+    backgroundImage: `url(${
+      !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+    })`,
+    backgroundPosition: `top left`,
+    backgroundAttachment: `fixed`,
+  }}
+>
+  <div
+    style={{
+      display: 'flex',
+      height: '150px',
+      lineHeight: '1',
+      justifyContent: 'space-around',
+      alignItems: 'left',
+      flexDirection: 'column',
+    }}
+  >
+    <h1
+      className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-centered animated bounceInLeft"
+      style={{
+        boxShadow:
+          '#b71540 0.5rem 0px 0px, #b71540 -0.5rem 0px 0px',
+        backgroundColor: '#b71540',
+        color: 'white',
+        lineHeight: '1',
+        padding: '0.25em',
+      }}
+    >
+      {title}
+    </h1>
+      <h3
+        className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animated bounceInRight"
+        style={{
+          boxShadow:
+            '#b71540 0.5rem 0px 0px, #b71540 -0.5rem 0px 0px',
+          backgroundColor: '#b71540',
+          color: 'white',
+          lineHeight: '1',
+          padding: '0.25em',
+        }}
+      >
+        {heading}
+      </h3>
+     </div>
+     </div>
+     <section className="section">
+        <PageContent className="container content" content={content} />
+          <TagList tags={tags} langKey={langKey}/>
+      </section>
+
       </div>
     )
 }
 
 ArtworkTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  heading: PropTypes.string,
   title: PropTypes.string.isRequired,
+  heading: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  array: PropTypes.array,
   tags: PropTypes.array,
   langKey: PropTypes.string
 }
@@ -66,33 +87,34 @@ ArtworkTemplate.propTypes = {
 class axesPage extends React.Component {
 
 render() {
-  const data = this.props.data;
-  const { frontmatter } = data.markdownRemark;
-  const { display } = frontmatter.slider;
-  const { array } = frontmatter.slider;
-  const description = frontmatter.headingDesc;
+  let data;
+  let dataMarkdown = [];
+  if (this.props.data !== null) {
+    dataMarkdown = this.props.data.markdownRemark
+    data = this.props.data;
+  }
   const jsonData = data.allArticlesJson.edges[0].node.articles;
+  const langKey = dataMarkdown.frontmatter.lang
+  const { frontmatter } = data.markdownRemark;
   const image = frontmatter.image.childImageSharp.fluid.src;
-  const langKey = frontmatter.lang;
   const tags = frontmatter.tags;
     return (
-      <Layout className="container" data={data} jsonData={jsonData} location={this.props.location}>
-        <SEO
-          frontmatter={frontmatter}
-          postImage={image}
-        />
-        <div>
+      <Layout className="content" data={this.props.data} jsonData={jsonData} location={this.props.location}>
+      <SEO
+        frontmatter={frontmatter}
+        postImage={image}
+      />
+      <div>
             <ArtworkTemplate
+            imageCardSL={dataMarkdown.frontmatter.imageCardSL}
+            image={dataMarkdown.frontmatter.image}
+            heading={dataMarkdown.frontmatter.heading}
+            mainpitch={dataMarkdown.frontmatter.mainpitch}
+            main={dataMarkdown.frontmatter.main}
+            testimonials={dataMarkdown.frontmatter.testimonials}
             contentComponent={HTMLContent}
-            heading={frontmatter.heading}
-            title={frontmatter.title}
-            content={data.markdownRemark.html}
-            intro={frontmatter.intro}
-            display={display}
-            array={array}
-            description={description}
-            testimonials={frontmatter.testimonials}
-            tags={tags}
+            title={dataMarkdown.frontmatter.title}
+            content={dataMarkdown.html}
             langKey={langKey}
             />
         </div>
@@ -150,34 +172,6 @@ query axesQuery($id: String!) {
        heading
        headingDesc
        description
-       testimonials{
-         author
-         quote
-       }
-       intro {
-         blurbs {
-           image {
-             childImageSharp {
-               fluid(maxWidth: 240, quality: 64) {
-                 ...GatsbyImageSharpFluid
-               }
-             }
-           }
-          heading
-          link
-          text
-         }
-      }
-      slider{
-        display
-        array{
-          original
-          thumbnail
-          originalAlt
-          originalTitle
-          description
-        }
-      }
     }
   }
 }

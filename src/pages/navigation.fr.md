@@ -15,8 +15,8 @@ imageCardSL:
   name: LITIS Lab
   description: Laboratoire d'informatique, de traitement de l'information et des systèmes
   website: www.litislab.fr
-path: /fr/
-slug: /fr/
+path: /fr/navigation
+slug: /fr/navigation
 ---
 # Projet de navigation
 

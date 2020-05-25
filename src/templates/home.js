@@ -179,16 +179,6 @@ export const pageQuery = graphql`
           }
         }
         heading
-        slider{
-          display
-          array{
-            original
-            thumbnail
-            originalAlt
-            originalTitle
-            description
-          }
-        }
         imageCardSL{
           alt
           image {
@@ -201,10 +191,6 @@ export const pageQuery = graphql`
           name
           description
           website
-        }
-        testimonials {
-          author
-          quote
         }
       }
       fields {
