@@ -9,5 +9,3 @@ date: "05-03-2019"
 path: /fr/tapisserie/
 slug: /fr/tapisserie/
 ---
-
-à completer

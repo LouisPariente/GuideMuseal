@@ -71,8 +71,8 @@ const Header = class extends React.Component {
     <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="Logo guide museal" style={{width: '120px'}} />
+          <Link to="/" title="Logo">
+            <img src={logo} alt="Logo guide museal" style={{height: '3em', marginTop: '15%'}} />
           </Link>
           {/* Hamburger menu */}
           <div className="navbar-burger burger" data-target="navMenu">

@@ -32,7 +32,7 @@ The route used in navigation has the following specifics:
 + It can be defined in several times
 + With changeable precision
 
-<img src="../img/legende_nav.jpg" height="300px" alt="Application pour la navigation">
+<img src="../img/legende_nav_en.jpg" height="300px" alt="navigation application">
 
 <br>
 

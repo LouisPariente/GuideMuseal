@@ -39,6 +39,7 @@ class TapestryPage extends React.Component {
       return (
         <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
           <div id="container_tapisserie">
+
             <div class="william">
                 <img  src="/img/cartes/adapted/william_card_resize_no_border.png" alt="zoom test" />
                 <audio
@@ -46,14 +47,32 @@ class TapestryPage extends React.Component {
                     src="">
                   </audio>
             </div>
+
             <div class="knight">
-                <img  src="/img/cartes/adapted/knight_card_resize_no_border.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/knight_card_resize_no_border_v2.png" alt="zoom test" />
                   <audio
                     controls
                     src="">
                   </audio>
+            </div>  
 
-            </div>           
+            <div class="relic1">
+                <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="zoom test" />
+                  <audio
+                    controls
+                    src="">
+                  </audio>
+            </div>  
+
+            <div class="bayeux">
+                <img  src="/img/cartes/adapted/bayeux_card_resize_no_border.png" alt="zoom test" />
+                  <audio
+                    controls
+                    src="">
+                  </audio>
+            </div>  
+
+
           </div>
         
         </Layout>
