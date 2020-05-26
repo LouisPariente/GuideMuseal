@@ -8,7 +8,7 @@ tags:
 lang: en
 date: "05-03-2019"
 image: /img/4504_test_low.jpg
-heading: "Vers une approche de découverte tactile d'œuvres d’art"
+heading: "Towards a tactile discovery approach to works of art"
 imageCardSL:
   alt: "image"
   image: /img/litis.png
