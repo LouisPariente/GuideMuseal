@@ -48,7 +48,7 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                   <li>
                     <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}>
-                      <FormattedMessage id="blog" />
+                      <FormattedMessage id="tapestry" />
                     </Link>
                   </li>
                   <li>
