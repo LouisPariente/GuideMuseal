@@ -1,14 +1,14 @@
 ---
 id: '05'
 title: "Navigation"
-description: "Navigation grace à la F2T"
+description: "Navigation through the F2T"
 templateKey: home
 tags:
   - web
 lang: en
 date: "05-03-2019"
 image: /img/4504_test_low.jpg
-heading: "Améliorer la navigation des personnes souffrant d'incapacité visuelle."
+heading: "Enabling VIP to navigate autonomously in Museums"
 imageCardSL:
   alt: "image"
   image: /img/litis.png
