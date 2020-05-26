@@ -108,7 +108,6 @@ class HomePage extends React.Component {
     const langKey = dataMarkdown.frontmatter.lang
     const { frontmatter } = data.markdownRemark;
     const image = frontmatter.image.childImageSharp.fluid.src;
-    const tags = frontmatter.tags;
 
     return (
       <Layout className="content" data={this.props.data} jsonData={jsonData} location={this.props.location}>

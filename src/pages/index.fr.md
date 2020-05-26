@@ -1,7 +1,7 @@
 ---
 id: '01'
 title: "Guide Museal"
-description: "qualche contenuto"
+description: "Index Guide Museal"
 templateKey: home
 tags:
   - web
@@ -15,8 +15,7 @@ imageCardSL:
   name: LITIS Lab
   description: Laboratoire d'informatique, de traitement de l'information et des systèmes
   website: www.litislab.fr
-path: /fr/
-slug: /fr/
+
 ---
 # Projet « GUIDE MUSEAL » soutenu par la Région Normandie (France) - 2019-2022
 

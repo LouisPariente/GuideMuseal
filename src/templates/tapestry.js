@@ -4,23 +4,86 @@ import TagList from '../components/TagList'
 import { graphql } from 'gatsby'
 import Layout from "../components/Layout"
 import Content, { HTMLContent } from "../components/Content"
+import SEO from '../components/SEO/SEO'
+import { FormattedMessage } from "react-intl"
+import { FaOm } from "react-icons/fa"
 
 
-const TapestryPageTemplate = ({ title, content, contentComponent, tags, langKey }) => {
-    const PageContent = contentComponent || Content
-    return (
-        <div className="container content">
-         <h1 className="title animated bounceInLeft">{title}</h1>
-          <section className="section">
-            <PageContent className="container content" content={content} />
+const TapestryPageTemplate = ({
+  imageCardSL,
+  image,
+  heading,
+
+  title,
+  content,
+  contentComponent,
+  tags,
+  langKey
+}) => {
+  const PageContent = contentComponent || Content
+  return (
+    <div>
+      <div
+    className="full-width-image margin-top-0"
+    style={{
+      backgroundImage: `url(${
+        !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      })`,
+      backgroundPosition: `top left`,
+      backgroundAttachment: `fixed`,
+    }}
+  >
+    <div
+      style={{
+        display: 'flex',
+        height: '150px',
+        lineHeight: '1',
+        justifyContent: 'space-around',
+        alignItems: 'left',
+        flexDirection: 'column',
+      }}
+    >
+      <h1
+        className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-centered animated bounceInLeft"
+        style={{
+          boxShadow:
+            '#b71540 0.5rem 0px 0px, #b71540 -0.5rem 0px 0px',
+          backgroundColor: '#b71540',
+          color: 'white',
+          lineHeight: '1',
+          padding: '0.25em',
+        }}
+      >
+        {title}
+      </h1>
+        <h3
+          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen animated bounceInRight"
+          style={{
+            boxShadow:
+              '#b71540 0.5rem 0px 0px, #b71540 -0.5rem 0px 0px',
+            backgroundColor: '#b71540',
+            color: 'white',
+            lineHeight: '1',
+            padding: '0.25em',
+          }}
+        >
+          {heading}
+        </h3>
+       </div>
+       </div>
+       <section className="section">
+          <PageContent className="container content" content={content} />
             <TagList tags={tags} langKey={langKey}/>
-          </section>
-        </div>
-  )
-  }
+        </section>
+
+
+      </div>
+)
+}
 
 TapestryPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  heading: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   tags: PropTypes.array,
@@ -30,14 +93,52 @@ TapestryPageTemplate.propTypes = {
 class TapestryPage extends React.Component {
   
     render() {
-      var dataMarkdown = [];
+      let data;
+      let dataMarkdown = [];
       if (this.props.data !== null) {
         dataMarkdown = this.props.data.markdownRemark
+        data = this.props.data;
       }
-      const jsonData = this.props.data.allArticlesJson.edges[0].node.articles;
-
+      const jsonData = data.allArticlesJson.edges[0].node.articles;
+      const langKey = dataMarkdown.frontmatter.lang
+      const { frontmatter } = data.markdownRemark;
+      const image = frontmatter.image.childImageSharp.fluid.src;
       return (
-        <Layout className="container" data={this.props.data} jsonData={jsonData} location={this.props.location}>
+        <Layout className="content" data={this.props.data} jsonData={jsonData} location={this.props.location}>
+          <SEO
+            frontmatter={frontmatter}
+            postImage={image}
+          />
+          <div>
+            <TapestryPageTemplate
+            imageCardSL={dataMarkdown.frontmatter.imageCardSL}
+            image={dataMarkdown.frontmatter.image}
+            heading={dataMarkdown.frontmatter.heading}
+            mainpitch={dataMarkdown.frontmatter.mainpitch}
+            main={dataMarkdown.frontmatter.main}
+            testimonials={dataMarkdown.frontmatter.testimonials}
+            contentComponent={HTMLContent}
+            title={dataMarkdown.frontmatter.title}
+            content={dataMarkdown.html}
+            langKey={langKey}
+             />
+        </div>
+        
+        <div id="container_content">
+          <div id="container_explications_tapisserie">
+            <h1>
+              <FormattedMessage id="titre_tapisserie"/>
+            </h1>
+            <h2>
+              <FormattedMessage id="explications_tapisserie2"/>
+            </h2>
+
+          </div>
+
+          <div class="titre_tapisserie">
+            <b>Extrait n°1 : LE SACRE DE GUILLAUME</b>
+          </div>
+
           <div id="container_tapisserie">
 
             <div class="william">
@@ -45,7 +146,7 @@ class TapestryPage extends React.Component {
                 <audio
                     controls
                     src="">
-                  </audio>
+                </audio>
             </div>
 
             <div class="knight">
@@ -74,6 +175,7 @@ class TapestryPage extends React.Component {
 
 
           </div>
+        </div>
         
         </Layout>
 
@@ -82,6 +184,7 @@ class TapestryPage extends React.Component {
   }
 
 TapestryPage.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   data: PropTypes.object.isRequired,
 }
 
@@ -123,6 +226,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        heading
       }
       fields {
         slug
