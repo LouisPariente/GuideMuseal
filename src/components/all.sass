@@ -209,34 +209,35 @@ footer.footer
   margin-left: 5%
   margin-right: 5%
 
-  
-
 #container_explications_tapisserie
   background-color:
   margin-right: 5%
   h1
     color: #b71540
+    font-size: 3vw
   h2
     color: #b71540
+    font-size: 2.5vw
   margin-bottom: 5%
-
-#titre
-  background-color: #dfe6e9
-  width: 70%
-  margin-bottom: 3%
-  h1
-    font-size: 2em
-  h2
-    font-size: 1.5em 
 
 .titre_tapisserie
   background-color: black
   color: white
-  width: 50%
-  font-size: 1.5em
+  display: inline-block
+  margin-bottom: 0px
 
 // VERSION GRANDE
 @media (min-width: 900px)
+  #container_explications_tapisserie
+  margin-right: 5%
+  margin-bottom: 5%
+  h1
+    color: #fffff0
+    font-size: 1.6vw
+  h2
+    color: #b71540
+    font-size: 1vw
+
   #container_tapisserie
     width: 1476px
     height: 970px
@@ -327,8 +328,8 @@ footer.footer
     z-index: 1
 
 
-// VERSION PETITE
-@media (max-width: 900px)
+// VERSION moyenne
+@media (min-width: 450px) and (max-width: 900px)
   #container_tapisserie
     width: 800px
     height: 522px
@@ -403,6 +404,99 @@ footer.footer
     background-color: rgba(0,0,0,0.5)
     audio
       visibility: visible
+
+
+  // MOBILE <450px
+
+
+   #titre
+  background-color: #dfe6e9
+  width: 70%
+  margin-bottom: 3%
+  h1
+    font-size: 2vw
+  h2
+    font-size: 1vw
+
+
+@media (max-width: 450px)
+  #container_tapisserie
+    width: 300px
+    height: 196px
+    background-image: url("/img/4525_low_300px.jpg")
+
+  .william
+    width: 78.75px
+    height: 97.52px
+    margin-left: 178px
+    margin-top: 72.55px
+    position: absolute
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -210px
+      margin-top: -20px
+      width: 100%
+      height: 10%
+  .william:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible
+ 
+
+  .knight
+    width: 280px
+    height: 300px
+    margin-left: 2px
+    position: absolute
+    margin-top: 167px
+    visibility: hidden
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -280px
+      width: 100%
+      height: 10%
+  .knight:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible
+
+  .relic1
+    width: 162px
+    height: 200px
+    margin-left: 632px
+    position: absolute
+    margin-top: 247px
+    visibility: hidden
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -162px
+      width: 100%
+      height: 10%
+  .relic1:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible
+
+  .bayeux
+    width: 219px
+    height: 250px
+    margin-left: 250px
+    position: absolute
+    margin-top: 116px
+    visibility: hidden
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -219px
+      width: 100%
+      height: 10%
+  .bayeux:hover
+    background-color: rgba(0,0,0,0.5)
+    audio
+      visibility: visible      
 
     
 

@@ -126,17 +126,17 @@ class TapestryPage extends React.Component {
         
         <div id="container_content">
           <div id="container_explications_tapisserie">
-            <h1>
+            <h1 class="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-centered">
               <FormattedMessage id="titre_tapisserie"/>
             </h1>
-            <h2>
+            <h2 class="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen">
               <FormattedMessage id="explications_tapisserie2"/>
             </h2>
 
           </div>
 
           <div class="titre_tapisserie">
-            <b>Extrait n°1 : TITRE A COMPLETER</b>
+            <p>Extrait n°1 : TITRE A COMPLETER</p>
           </div>
 
           <div id="container_tapisserie">
