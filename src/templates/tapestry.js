@@ -136,7 +136,7 @@ class TapestryPage extends React.Component {
           </div>
 
           <div class="titre_tapisserie">
-            <b>Extrait n°1 : LE SACRE DE GUILLAUME</b>
+            <b>Extrait n°1 : TITRE A COMPLETER</b>
           </div>
 
           <div id="container_tapisserie">
