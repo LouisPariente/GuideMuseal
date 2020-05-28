@@ -125,11 +125,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `KAKI`,
-        short_name: `Kaki`,
+        name: `GuideMuseal`,
+        short_name: `GuideMuseal`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#D64000`,
+        theme_color: `#fff`,
         display: `standalone`,
         icon: `src/img/icon.png`,
       },
