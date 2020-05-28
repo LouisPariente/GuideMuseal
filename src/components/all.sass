@@ -1,6 +1,7 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import "~animate.css/animate.css"
 @import "~@creativebulma/bulma-collapsible/src/sass/index.sass"
+@import "~bulma"
 
 // Config vars
 // Kaki logo brand color: #FD461E
@@ -167,43 +168,7 @@ footer.footer
   .card-content
     padding: 5%
 
-@media (max-width: 1474px)
-  .high_res
-    display: none
-  .container_image
-    position: relative
-    text-align: center
-    min-width: 800px
-    max-width: 800px
-  .top_right
-    font-size: 1em
-
-//Res > 1474px de large
-@media (min-width: 1474px)
-  .low_res
-    display: none
-  .container_image
-    position: relative
-    text-align: center
-    min-width: 1407px
-    max-width: 1407px
-  .top_right
-    font-size: 1.5em
-
-.top_right
-  width: 40%
-  height: 20%
-  position: absolute
-  top: 8px
-  right: 16px
-  color: white
-  background-color: black
-  opacity: 0.66
-@import "~bulma"
-
-
 // TAPISSERIE
-
 #container_content
   margin-left: 5%
   margin-right: 5%
@@ -223,19 +188,19 @@ footer.footer
   background-color: black
   color: white
   display: inline-block
-  margin-bottom: 0px
+  padding: 0.2%
 
 // VERSION GRANDE
-@media (min-width: 900px)
+@media (min-width: 1500px)
   #container_explications_tapisserie
-  margin-right: 5%
-  margin-bottom: 5%
-  h1
-    color: #fffff0
-    font-size: 1.6vw
-  h2
-    color: #b71540
-    font-size: 1vw
+    margin-right: 5%
+    margin-bottom: 5%
+    h1
+      color: #b71540
+      font-size: 1.6vw
+    h2
+      color: #b71540
+      font-size: 1vw
 
   #container_tapisserie
     width: 1476px
@@ -328,7 +293,7 @@ footer.footer
 
 
 // VERSION moyenne
-@media (min-width: 450px) and (max-width: 900px)
+@media (min-width: 750px) and (max-width: 1500px)
   #container_tapisserie
     width: 800px
     height: 522px
@@ -407,7 +372,7 @@ footer.footer
 
   // MOBILE <450px
 
-@media (max-width: 450px)
+@media (max-width: 750px)
   #container_tapisserie
     width: 300px
     height: 196px

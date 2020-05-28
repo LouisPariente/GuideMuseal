@@ -11,6 +11,7 @@ image: /img/4504_test_low.jpg
 heading: "Discovering the Bayeux Tapestry Museum"
 path: /en/
 slug: /en/
+
 ---
 # "MUSEAL GUIDE" project supported by the Normandy Region (France) - 2019-2022
 
