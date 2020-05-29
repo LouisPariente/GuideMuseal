@@ -5,7 +5,7 @@ description: "Tapisserie de Bayeux"
 templateKey: tapestry
 lang: en
 image: /img/PersimmonHD.jpg
-date: "05-03-2019"
+date: "29-06-2020"
 path: /en/tapisserie/
 slug: /en/tapisserie/
 ---

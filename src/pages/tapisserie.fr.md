@@ -6,7 +6,7 @@ templateKey: tapestry
 tags:
   - web
 lang: fr
-date: "05-03-2019"
+date: "29-06-2020"
 image: /img/4501_low.jpg
 heading: "La découverte d'extraits de la tapisserie de manière interactive"
 path: /fr/

@@ -6,15 +6,9 @@ templateKey: home
 tags:
   - web
 lang: fr
-date: "05-03-2019"
-image: /img/4504_test_low.jpg
+date: "29-06-2020"
+image: /img/bannieres/4504_low.jpg
 heading: "Améliorer la navigation des personnes souffrant d'incapacité visuelle."
-imageCardSL:
-  alt: "image"
-  image: /img/litis.png
-  name: LITIS Lab
-  description: Laboratoire d'informatique, de traitement de l'information et des systèmes
-  website: www.litislab.fr
 path: /fr/navigation
 slug: /fr/navigation
 ---

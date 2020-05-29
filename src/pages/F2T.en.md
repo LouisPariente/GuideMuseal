@@ -1,7 +1,7 @@
 ---
 id: '07'
 title: "F2T"
-image: /img/4504_test_low.jpg
+image: /img/4519_low.jpg
 heading: Force Feedback Tablet
 headingDesc: >
 description: "F2T Presentation"
@@ -9,7 +9,7 @@ templateKey: axes
 tags:
   - art
 lang: fr
-date: "05-03-2019"
+date: "29-05-2020"
 path: /en/F2T
 slug: /en/F2T
 ---

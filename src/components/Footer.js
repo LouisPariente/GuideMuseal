@@ -6,7 +6,7 @@ import menuTree from '../data/menuTree'
 //import { FaFacebook, FaTwitter, FaInstagram, FaVimeo, FaLinkedin } from 'react-icons/fa';
 import Copyright from '../components/Copyright'
 import ScrollToTop from '../components/ScrollToTop'
-import logo from '../img/logo2.png'
+import logo from '../img/logo.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -28,34 +28,18 @@ const Footer = class extends React.Component {
                 <section className="menu">
                     <ul className="menu-list">
                       <li><Link to={"/" + props.langKey} className="navbar-item"><FormattedMessage id="home" /></Link></li>
-                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.f2t[sel] +"/"}><FormattedMessage id="F2T" /></Link></li>
-                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.about[sel] +"/"}><FormattedMessage id="about" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.navigation[sel] +"/"}><FormattedMessage id="navigation" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.acces_art[sel] +"/"}><FormattedMessage id="acces_art" /></Link></li>
-                    <li><a
-                      className="navbar-item"
-                      href="/admin/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Admin
-                    </a></li>
+                      <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.f2t[sel] +"/"}><FormattedMessage id="F2T" /></Link></li>
                     </ul>
                   </section>
                 </div>
                 <div className="column is-4">
                 <section>
                   <ul className="menu-list">
-                  <li>
-                    <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}>
-                      <FormattedMessage id="tapestry" />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.contact[sel] +"/"}>
-                      <FormattedMessage id="contact" />
-                    </Link>
-                  </li>
+                    <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.tapestry[sel] +"/"}><FormattedMessage id="tapestry" /></Link></li>
+                    <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.about[sel] +"/"}><FormattedMessage id="about" /></Link></li>
+                    <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.contact[sel] +"/"}><FormattedMessage id="contact" /></Link></li>
                   </ul>
                 </section>
                 </div>

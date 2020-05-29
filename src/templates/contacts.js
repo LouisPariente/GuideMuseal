@@ -1,33 +1,13 @@
 import React from "react"
 import * as PropTypes from "prop-types"
 import { graphql } from 'gatsby'
-import { navigate } from "gatsby-link";
 import Layout from "../components/Layout"
 import SEO from '../components/SEO/SEO'
 import Content, { HTMLContent } from "../components/Content"
 import ContactDetails from "../components/ContactDetails"
 import OsmMap from '../components/OsmMap'
-import FollowUs from '../components/FollowUs'
 import { getCurrentLangKey } from 'ptz-i18n';
-import { FormattedMessage } from 'react-intl';
 import { Format } from 'react-intl-format';
-
-
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
-function setActionPath(langKey) {
-  let path;
-  if(langKey==='en'){
-    path = '/en/contact/thanks/';
-  }else{
-    path = '/fr/contact/merci/';
-  }
-  return path;
-}
 
 const ContactPageTemplate = ({
   title, content, contentComponent,
@@ -64,25 +44,6 @@ class ContactPage extends React.Component {
     super(props);
     this.state = { isValidated: false };
   };
-
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch("/?no-cache=1", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error));
-  };
   render() {
     let dataMarkdown = [];
     let data;
@@ -94,7 +55,6 @@ class ContactPage extends React.Component {
     const url = location.pathname;
     const { langs, defaultLangKey } = data.site.siteMetadata.languages;
     this.langKey = getCurrentLangKey(langs, defaultLangKey, url);
-    const action = setActionPath(this.langKey);
     const jsonData = data.allArticlesJson.edges[0].node.articles;
     const address = dataMarkdown.frontmatter.address;
     const phone = dataMarkdown.frontmatter.phone;
@@ -103,8 +63,6 @@ class ContactPage extends React.Component {
     const { lat } = locations;
     const { lng } = locations;
     const { message } = locations;
-    const linkinsta = dataMarkdown.frontmatter.linkinsta;
-    const instagram = dataMarkdown.frontmatter.instagram;
     const image = dataMarkdown.frontmatter.imageCardSL;
     const { frontmatter } = dataMarkdown;
     const imageSEO = frontmatter.image.childImageSharp.fluid.src;
@@ -126,18 +84,11 @@ class ContactPage extends React.Component {
                 email={email}
                 title={dataMarkdown.frontmatter.title}
                 content={dataMarkdown.html}
-                onSubmit={this.handleSubmit}
-                action={action}
-                option={intl.formatMessage({ id: 'contact.enquiry' })}
-                optionA={intl.formatMessage({ id: 'contact.enquiry.a' })}
-                optionB={intl.formatMessage({ id: 'contact.enquiry.b' })}
-                optionC={intl.formatMessage({ id: 'contact.enquiry.c' })}
                  />
             </div>
           )}
         </Format>
         <OsmMap lat={lat} lng={lng} message={message}/>
-      <FollowUs link={linkinsta} instagram={instagram}/>
     </Layout>
     )
   }

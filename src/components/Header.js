@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo2.png'
+import logo from '../img/logo.png'
 import { FaHome, FaQuestion, FaTabletAlt, FaPenFancy, FaAmericanSignLanguageInterpreting } from 'react-icons/fa';
 import SelectLanguage from './SelectLanguage';
 import { FormattedMessage } from 'react-intl';
@@ -54,7 +54,7 @@ const Header = class extends React.Component {
   if (isMobile) {
 
    let navMenu = document.getElementById("navMenu");
-   navMenu.style.backgroundColor = "#abd6d1"
+   navMenu.style.backgroundColor = "#fff"
 
  }
 }
