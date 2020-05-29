@@ -8,7 +8,7 @@ tags:
 lang: fr
 date: "29-06-2020"
 image: /img/bannieres/4504_low.jpg
-heading: "Améliorer la navigation des personnes souffrant d'incapacité visuelle."
+heading: "Améliorer la navigation des personnes presentant une incapacité visuelle."
 path: /fr/navigation
 slug: /fr/navigation
 ---
