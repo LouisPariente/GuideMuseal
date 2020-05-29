@@ -145,7 +145,7 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/william_card_resize_no_border.png" alt="zoom test" />
                 <audio
                     controls
-                    src="/sound/william1.wav">
+                    src="/sound/william.wav">
                 </audio>
             </div>
 
@@ -153,7 +153,7 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/knight_card_resize_no_border_v2.png" alt="zoom test" />
                   <audio
                     controls
-                    src="">
+                    src="/sound/william_knight.wav">
                   </audio>
             </div>  
 
@@ -161,16 +161,12 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="zoom test" />
                   <audio
                     controls
-                    src="">
+                    src="/sound/relic.wav">
                   </audio>
             </div>  
 
             <div class="bayeux">
                 <img  src="/img/cartes/adapted/bayeux_card_resize_no_border.png" alt="zoom test" />
-                  <audio
-                    controls
-                    src="">
-                  </audio>
             </div>  
 
 
