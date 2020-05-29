@@ -161,7 +161,7 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="zoom test" />
                   <audio
                     controls
-                    src="/sound/relic.wav">
+                    src="/sound/hotel.wav">
                   </audio>
             </div>  
 
