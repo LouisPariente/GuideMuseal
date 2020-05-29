@@ -71,12 +71,6 @@ const TapestryPageTemplate = ({
         </h3>
        </div>
        </div>
-       <section className="section">
-          <PageContent className="container content" content={content} />
-            <TagList tags={tags} langKey={langKey}/>
-        </section>
-
-
       </div>
 )
 }
@@ -91,7 +85,6 @@ TapestryPageTemplate.propTypes = {
 }
 
 class TapestryPage extends React.Component {
-  
     render() {
       let data;
       let dataMarkdown = [];
@@ -103,6 +96,21 @@ class TapestryPage extends React.Component {
       const langKey = dataMarkdown.frontmatter.lang
       const { frontmatter } = data.markdownRemark;
       const image = frontmatter.image.childImageSharp.fluid.src;
+
+      if(langKey=="fr"){
+        var knight="/sound/fr/william_knight.wav"
+        var william="/sound/fr/william.wav"
+        var autel="/sound/fr/hotel.wav"
+        var harold="/sound/fr/harold.wav"
+        var relic="/sound/fr/relic.wav"
+      } else {
+        var knight="/sound/en/william_knight.wav"
+        var william="/sound/en/william.wav"
+        var autel="/sound/en/hotel.wav"
+        var harold="/sound/en/harold.wav"
+        var relic="/sound/en/relic.wav"
+      }
+
       return (
         <Layout className="content" data={this.props.data} jsonData={jsonData} location={this.props.location}>
           <SEO
@@ -124,8 +132,8 @@ class TapestryPage extends React.Component {
              />
         </div>
         
-        <div id="container_content">
-          <div id="container_explications_tapisserie">
+        <div class="container_content">
+          <div class="container_explications_tapisserie">
             <h1 class="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen is-centered">
               <FormattedMessage id="titre_tapisserie"/>
             </h1>
@@ -139,13 +147,13 @@ class TapestryPage extends React.Component {
             <p>Scène 22 de la tapisserie de Bayeux</p>
           </div>
 
-          <div id="container_tapisserie">
+          <div class="container_tapisserie">
 
             <div class="william">
                 <img  src="/img/cartes/adapted/william_card_resize_no_border.png" alt="William" />
                 <audio
                     controls
-                    src="/sound/william.wav">
+                    src={william}>
                 </audio>
             </div>
 
@@ -153,7 +161,7 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/knight_card_resize_no_border_v2.png" alt="William en tenue de chevalier" />
                   <audio
                     controls
-                    src="/sound/william_knight.wav">
+                    src={knight}>
                   </audio>
             </div>  
 
@@ -161,7 +169,7 @@ class TapestryPage extends React.Component {
                 <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="Autel" />
                   <audio
                     controls
-                    src="/sound/hotel.wav">
+                    src={autel}>
                   </audio>
             </div>  
 
@@ -172,13 +180,13 @@ class TapestryPage extends React.Component {
 
           </div>
 
-          <div id="container_tapisserie2">
+          <div class="container_tapisserie2">
 
             <div class="harold">
                   <img  src="/img/cartes/adapted/harold_card_resize_no_border.png" alt="Harold" />
                   <audio
                       controls
-                      src="/sound/harold.wav">
+                      src={harold}>
                   </audio>
             </div>
 
@@ -186,7 +194,7 @@ class TapestryPage extends React.Component {
                   <img  src="/img/cartes/adapted/relic2_card_resize_no_border.png" alt="Harold" />
                   <audio
                       controls
-                      src="/sound/relic.wav">
+                      src={relic}>
                   </audio>
             </div>
           

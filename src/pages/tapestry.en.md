@@ -1,13 +1,14 @@
 ---
 id: '02'
-title: "La tapisserie de Bayeux"
-description: "Tapisserie de Bayeux"
+title: "The Bayeux Tapestry"
+description: "Bayeux Tapestry"
 templateKey: tapestry
+tags:
+  - web
 lang: en
-image: /img/PersimmonHD.jpg
 date: "29-06-2020"
-path: /en/tapisserie/
-slug: /en/tapisserie/
+image: /img/4501_low.jpg
+heading: "Tapestry discovery interactively"
+path: /en/tapestry
+slug: /en/tapestry
 ---
-
-à completer
