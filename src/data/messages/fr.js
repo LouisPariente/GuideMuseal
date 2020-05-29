@@ -15,5 +15,5 @@ module.exports = {
   'navigation':"Navigation",
   'tapestry':"Tapisserie",
   'titre_tapisserie':"Découverte d'extraits de la tapisserie de Bayeux",
-  'explications_tapisserie2':"Survolez les divers éléments de la tapisserie pour les mettre en avant ainsi que pour faire apparaitre une explication audio."
+  'explications_tapisserie2':"Survolez les divers éléments de la tapisserie pour les mettre en avant ainsi que pour faire apparaitre une explication audio.",
 };

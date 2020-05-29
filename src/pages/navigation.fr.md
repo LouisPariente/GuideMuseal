@@ -34,3 +34,12 @@ La navigation se veut centrée sur l'utilisateur (égo-centré) en lui apportant
 + indication audio de la direction et de la distance vers la prochaine étape (noeud du graphe de navigation)
 + indication préventive avant de franchir une porte
 + indication du point d'intérêt le plus proche
+
+## Vidéo de démonstration
+<div 
+  style="max-width:560px;"
+  > 
+  <iframe style="width:100%;"
+  width="560" height="315" 
+  src="https://www.youtube.com/embed/lRsYAf_5ykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

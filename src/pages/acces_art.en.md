@@ -6,7 +6,7 @@ templateKey: home
 tags:
   - web
 lang: en
-date: "05-03-2019"
+date: "29-06-2020"
 image: /img/bannieres/4504_low.jpg
 heading: "Towards a tactile discovery approach to works of art"
 path: /en/acces_art

@@ -35,4 +35,14 @@ Navigation is centered on the user (ego-centered) by providing him with the nece
 + preventive indication before crossing a door
 + indication of the nearest point of interest
 
+## Demonstration video
+
+<div 
+  style="max-width:560px;"
+  > 
+  <iframe style="width:100%;"
+  width="560" height="315" 
+  src="https://www.youtube.com/embed/lRsYAf_5ykE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
