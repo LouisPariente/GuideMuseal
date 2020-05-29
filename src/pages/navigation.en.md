@@ -22,15 +22,17 @@ For this it is divided into several modules:
 + a module allowing navigation in a map
 
 The route used in navigation has the following specifics:
-+ It can be multi-stage (by connecting 2 points of interest of different stages between them)
-+ It can be defined in several times
-+ With changeable precision
++ It can be multi-storey (by connecting 2 points of interest located on different storeys)
++ It can be defined in several sections in succession
++ It can have a modifiable resolution (zoom)
 
 <img src="../img/legende_nav_en.jpg" height="300px" alt="navigation application">
 
 <br>
 
-Navigation is intended to focus on the user by providing the information necessary for it:
-+ audio indication of direction and distance to next step
-+ prevention when crossing doors
+Navigation is centered on the user (ego-centered) by providing him with the necessary information:
++ audio indication of the direction and the distance to the next stage (node ​​of the navigation graph)
++ preventive indication before crossing a door
 + indication of the nearest point of interest
+
+

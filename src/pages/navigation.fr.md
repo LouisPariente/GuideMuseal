@@ -14,7 +14,7 @@ slug: /fr/navigation
 ---
 # Projet de navigation
 
-Le projet de navigation vise à améliorer la navigation des personnes souffrant d'incapacité visuelle.
+Le projet de navigation vise à améliorer la navigation des personnes présentant une incapacité visuelle.
 
 Pour cela il est divisé en plusieurs modules :
 + un module permettant la génération d'un graphe à partir d'un plan
@@ -22,15 +22,15 @@ Pour cela il est divisé en plusieurs modules :
 + un module permettant la navigation dans un plan
 
 L'itinéraire utilisé dans la navigation possède les spécifités suivantes :
-+ Il peut être multi-étage (en reliant 2 points d'intérê d'étages différents entre eux)
-+ Il peut être défini en plusieurs fois
-+ Avec une précision modifiable
++ Il peut être multi-étage (en reliant 2 points d'intérêt se situant à des étages différents)
++ Il peut être défini en plusieurs tronçons à la suite
++ Il peut avoir une résolution modifiable (zoom)
 
 <img src="../img/legende_nav.jpg" height="300px" alt="Application pour la navigation">
 
 <br>
 
-La navigation se veut centrer sur l'utilisateur en lui apportant les informations nécessaire à celle-ci :
-+ indication audio de la direction et de la distance vers la prochaine étape
-+ prévention lors du franchissement des portes
-+ indication du POI le plus proche
+La navigation se veut centrée sur l'utilisateur (égo-centré) en lui apportant les informations nécessaires :
++ indication audio de la direction et de la distance vers la prochaine étape (noeud du graphe de navigation)
++ indication préventive avant de franchir une porte
++ indication du point d'intérêt le plus proche
