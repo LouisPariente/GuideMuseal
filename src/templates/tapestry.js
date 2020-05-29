@@ -144,7 +144,7 @@ class TapestryPage extends React.Component {
           </div>
 
           <div class="titre_tapisserie">
-            <p>Scène 22 de la tapisserie de Bayeux</p>
+            <FormattedMessage id="scene22"/>
           </div>
 
           <div class="container_tapisserie">

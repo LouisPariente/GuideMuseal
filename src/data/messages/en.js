@@ -70,4 +70,5 @@ module.exports = {
   'tapestry':"Tapestry",
   'titre_tapisserie':"Discovery of the Bayeux tapestry",
   'explications_tapisserie2':"Hover over the various elements of the tapestry to highlight them as well as to reveal an audio explanation.",
+  'scene22':"Scene 22 of the Bayeux tapestry"
 };

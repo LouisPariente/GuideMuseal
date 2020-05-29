@@ -17,9 +17,9 @@ module.exports = {
       `,
     },
     organization: {
-      name: 'Example, Inc.',
-      url: 'https://example.com',
-      logo: 'img/logo.svg',
+      name: 'LITIS',
+      url: 'https://litislab.fr',
+      logo: '',
     },
     social: {
       twitter: '@twitter',
@@ -131,7 +131,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/img/icon.png`,
+        icon: `src/img/favicon.jpg`,
       },
     },
     {
