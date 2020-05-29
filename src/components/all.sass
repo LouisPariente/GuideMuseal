@@ -222,7 +222,6 @@ footer.footer
     audio
       visibility: visible
  
-
   .knight
     width: 525px
     height: 530px
@@ -291,6 +290,45 @@ footer.footer
     position: absolute
     z-index: 1
 
+
+  #container_tapisserie2
+    width: 1476px
+    height: 970px
+    background-image: url("/img/4526_low.jpg")
+
+  .harold
+    width: 420px
+    height: 460px
+    margin-left: 95px
+    margin-top: 365px
+    position: absolute
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -420px
+  .harold:hover
+    background-color: rgba(0,0,0,0.5)
+    z-index: 1
+    .relic2
+      z-index: 0
+    audio
+      visibility: visible
+  
+  .relic2
+    width: 366px
+    height: 460px
+    margin-left: 330px
+    margin-top: 427px
+    position: absolute
+    audio
+      visibility: hidden
+      position: absolute
+      margin-left: -360px
+  .relic2:hover
+    background-color: rgba(0,0,0,0.5)
+    visibility: visible
+    audio
+      visibility: visible
 
 // VERSION moyenne
 @media (min-width: 750px) and (max-width: 1500px)
@@ -368,6 +406,12 @@ footer.footer
     background-color: rgba(0,0,0,0.5)
     audio
       visibility: visible
+
+  .harold
+    visibility: hidden
+
+  .relic2
+    visibility: hidden
 
 
   // MOBILE <450px
@@ -449,7 +493,13 @@ footer.footer
   .bayeux:hover
     background-color: rgba(0,0,0,0.5)
     audio
-      visibility: visible      
+      visibility: visible    
+
+  .harold
+    visibility: hidden
+
+  .relic2
+    visibility: hidden
 
     
 

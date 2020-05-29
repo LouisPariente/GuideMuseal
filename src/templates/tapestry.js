@@ -142,7 +142,7 @@ class TapestryPage extends React.Component {
           <div id="container_tapisserie">
 
             <div class="william">
-                <img  src="/img/cartes/adapted/william_card_resize_no_border.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/william_card_resize_no_border.png" alt="William" />
                 <audio
                     controls
                     src="/sound/william.wav">
@@ -150,7 +150,7 @@ class TapestryPage extends React.Component {
             </div>
 
             <div class="knight">
-                <img  src="/img/cartes/adapted/knight_card_resize_no_border_v2.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/knight_card_resize_no_border_v2.png" alt="William en tenue de chevalier" />
                   <audio
                     controls
                     src="/sound/william_knight.wav">
@@ -158,7 +158,7 @@ class TapestryPage extends React.Component {
             </div>  
 
             <div class="relic1">
-                <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="Autel" />
                   <audio
                     controls
                     src="/sound/hotel.wav">
@@ -166,11 +166,32 @@ class TapestryPage extends React.Component {
             </div>  
 
             <div class="bayeux">
-                <img  src="/img/cartes/adapted/bayeux_card_resize_no_border.png" alt="zoom test" />
+                <img  src="/img/cartes/adapted/bayeux_card_resize_no_border.png" alt="Bayeux" />
             </div>  
 
 
           </div>
+
+          <div id="container_tapisserie2">
+
+            <div class="harold">
+                  <img  src="/img/cartes/adapted/harold_card_resize_no_border.png" alt="Harold" />
+                  <audio
+                      controls
+                      src="/sound/harold.wav">
+                  </audio>
+            </div>
+
+            <div class="relic2">
+                  <img  src="/img/cartes/adapted/relic2_card_resize_no_border.png" alt="Harold" />
+                  <audio
+                      controls
+                      src="/sound/relic.wav">
+                  </audio>
+            </div>
+          
+          </div>
+
         </div>
         
         </Layout>
