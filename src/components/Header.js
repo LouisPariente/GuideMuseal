@@ -68,7 +68,7 @@ const Header = class extends React.Component {
    return (
 
 <header>
-    <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+    <nav className="navbar is-transparent" role="navigation" aria-label="Navigation-principale">
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" title="Logo">

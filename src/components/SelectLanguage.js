@@ -13,12 +13,20 @@ const getIcon = langKey => {
   }
 };
 
+const getLanguage = langKey => {
+  switch (langKey) {
+    case 'en': return "English";
+    case 'fr': return "French";
+    default: return null;
+  }
+};
+
 const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
       <li className="flags" key={lang.langKey} selected={lang.selected}>
         <Link to={lang.link} alt={lang.langKey} style={{
           color: '#b71540'
-        }}>
+        }} aria-label={"Switch to " + getLanguage(lang.langKey)}>
         {getIcon(lang.langKey)}
           </Link>
       </li>

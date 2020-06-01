@@ -17,7 +17,7 @@ const Footer = class extends React.Component {
         <div className="content has-text-centered">
           <img
             src={logo}
-            alt="Kaldi"
+            alt="Logo Guide Museal"
             style={{ width: '20em', height: '6em' }}
           />
         </div>
@@ -26,8 +26,8 @@ const Footer = class extends React.Component {
               <div className="columns">
                 <div className="column is-4">
                 <section className="menu">
-                    <ul className="menu-list">
-                      <li><Link to={"/" + props.langKey} className="navbar-item"><FormattedMessage id="home" /></Link></li>
+                    <ul className="menu-list" >
+                      <li ><Link to={"/" + props.langKey} className="navbar-item"><FormattedMessage id="home" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.navigation[sel] +"/"}><FormattedMessage id="navigation" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.acces_art[sel] +"/"}><FormattedMessage id="acces_art" /></Link></li>
                       <li><Link className="navbar-item" to={"/" + props.langKey + "/" + menuTree.f2t[sel] +"/"}><FormattedMessage id="F2T" /></Link></li>
