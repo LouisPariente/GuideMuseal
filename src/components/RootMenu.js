@@ -26,7 +26,7 @@ const RootMenu = ( props ) => {
         <div className="navbar-dropdown">
           <div className="nested navbar-item dropdown">
             <div className="dropdown-trigger">
-              <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
+              <button className="button" aria-haspopup="true" aria-controls="Page navigation">
                 <Link to={"/" + props.langKey + "/" + menuTree.navigation[sel] + "/" }>
                   <FormattedMessage id="navigation"/>
                 </Link>
@@ -35,7 +35,7 @@ const RootMenu = ( props ) => {
         </div>
       <div className="nested navbar-item dropdown">
         <div className="dropdown-trigger">
-          <button className="button" aria-haspopup="true" aria-controls="dropdown-menu">
+          <button className="button" aria-haspopup="true" aria-controls="page acces art">
             <Link to={"/" + props.langKey + "/" + menuTree.acces_art[sel] + "/"}>
               <FormattedMessage id="acces_art"/>
             </Link>

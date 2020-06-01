@@ -24,11 +24,10 @@ const getLanguage = langKey => {
 const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
       <li className="flags" key={lang.langKey} selected={lang.selected}>
-        <Link to={lang.link} alt={lang.langKey} style={{
-          color: '#b71540'
-        }} aria-label={"Switch to " + getLanguage(lang.langKey)}>
-        {getIcon(lang.langKey)}
-          </Link>
+        <Link to={lang.link} alt={lang.langKey} 
+          aria-label={"Switch to " + getLanguage(lang.langKey)}>
+          {getIcon(lang.langKey)}
+        </Link>
       </li>
   );
 
