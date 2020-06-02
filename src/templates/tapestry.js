@@ -167,10 +167,6 @@ class TapestryPage extends React.Component {
 
             <div class="relic1">
                 <img  src="/img/cartes/adapted/relic1_card_resize_no_border.png" alt="Autel" />
-                  <audio
-                    controls
-                    src={autel}>
-                  </audio>
             </div>  
 
             <div class="bayeux">
